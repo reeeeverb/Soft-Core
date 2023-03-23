@@ -1,8 +1,10 @@
 
-module alu(input  logic[2:0]   c,
-	       input  logic[31:0]a,b,
-           output logic[31:0]  y);
+module alu(input  logic[31:0]a,b,
+		   input  logic[2:0]   c, 
+           output logic[31:0]  y,
+		   output logic      zero);
 
+  assign zero = 0;
   always@(c)
 	case(c)
 		3'b001	: 	assign y=a&b;
