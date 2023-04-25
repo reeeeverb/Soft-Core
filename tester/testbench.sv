@@ -9,6 +9,8 @@ module testbench();
 
 	initial
 		begin
+            $dumpfile ("tb.vcd");
+            $dumpvars(0,testbench);
 			reset <= 1; #22; reset <=0;
 		end
 	always
@@ -23,7 +25,7 @@ module testbench();
 					$stop;
 			end else if (dataadr !==80)begin
 				$display("Simulation Failed");
-				$stop;
+				$finish;
 			end
 		end
 	end
