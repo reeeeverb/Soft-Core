@@ -7,7 +7,7 @@ module maindec(input  logic[5:0]op,
 
 logic[8:0]controls;
 
-assign {regwrite,regdst,alusrc,brancch,memwrite,memtoreg,jump,aluop}=controls;
+assign {regwrite,regdst,alusrc,branch,memwrite,memtoreg,jump,aluop}=controls;
 
 always_comb
 	case(op)
