@@ -1,6 +1,8 @@
 # Soft-Core
-if the formatting looks weird its because im using ModelSim and its sucks
-- basic implementation of single cycle mips chip
-- test program is memfile.dat
-  - has to be place in root directory of ModelSim install for some reason
+- adjusted to work with iverilog 
+- in the tester file cmd.sh contains the correct cmds
+- iverilog(v13) and gtkwave required
 
+# ITS DONEEEEEEE
+- for now at least eventually ill circle back around to pipelining 
+    - but I fear HDL
